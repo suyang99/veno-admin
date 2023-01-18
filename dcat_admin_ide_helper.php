@@ -355,7 +355,7 @@ namespace Dcat\Admin {
     class Show {}
 
     /**
-     * @method \App\Admin\Extensions\Form\SelectCreate selectCreate(...$params)
+     
      */
     class Form {}
 
@@ -375,7 +375,7 @@ namespace Dcat\Admin\Grid {
 
 namespace Dcat\Admin\Show {
     /**
-     * @method $this video(...$params)
+     
      */
     class Field {}
 }
