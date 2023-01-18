@@ -30,7 +30,7 @@ Route::group([
     $router->get('pay/channel', 'ChannelController@index');
     $router->post('/pay/channel/disable', 'ChannelController@disablePay');
 
-    $router->get('pay/list','OrderExchangeController@index');
+    $router->get('trade/order','OrderExchangeController@index');
     $router->post('/pay/confirm', 'OrderExchangeController@confirmPay');
 
     $router->get('trade/product','GoodController@index');
@@ -43,7 +43,7 @@ Route::group([
     $router->delete('notice/list/{id}','NoticeController@destroy');
     ///notice/list/4
     $router->get('pay/userList', 'UserWithdrawController@index');
-
+    $router->get('pay/list', 'UserRechargeController@index');
 
     $router->any('users/files', 'FileController@handle');
 });

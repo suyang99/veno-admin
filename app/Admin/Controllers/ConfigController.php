@@ -19,11 +19,7 @@ class ConfigController  extends AdminController
     }
     public function editData(Content $content)
     {
-      /*  return $content
-            ->translation($this->translation())
-            ->title($this->title())
-            ->description($this->description()['edit'] ?? trans('admin.edit'))
-            ->body($this->form());*/
+
         return $content
             ->header($this->translation())
             ->body(new Card(new Setting()));
